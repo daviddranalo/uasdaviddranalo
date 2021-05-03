@@ -1,72 +1,72 @@
 FORMAT: 1A
 HOST: localhost/
 
-# UAS
+# UAS DAVID DRANALO
 
 Polls is a simple API allowing consumers to view polls and vote in them.
 
-## Data - Data Pekerja [/uas]
+## Data Barang [/uasdaviddranalo]
 
-### Semua List Pekerja [GET/uas/get.php]
+### List Barang [GET/uasdaviddranalo/get.php]
 
 + Response 200 (application/json)
 
         [
-            {
-    "DataBarang": [
-        {
-            "NamaBarang": "Dompet",
-            "Id": "111",
-            "Pengirim": "Aldi",
-            "Penerima": "Mila",
-            "AlamatBarang": "jakarta"
-        },
-        {
-            "NamaBarang": "Dompet",
-            "Id": "123",
-            "Pengirim": "Aldi",
-            "Penerima": "Mila",
-            "AlamatBarang": "jakarta"
-        },
-        {
-            "NamaBarang": "Gelas",
-            "Id": "212",
-            "Pengirim": "Budi",
-            "Penerima": "Dimas",
-            "AlamatBarang": "Palembang"
-        },
-        {
-            "NamaBarang": "Gelas",
-            "Id": "456",
-            "Pengirim": "Budi",
-            "Penerima": "Dimas",
-            "AlamatBarang": "Palembang"
-        },
-        {
-            "NamaBarang": "kaca",
-            "Id": "987",
-            "Pengirim": "fidi",
-            "Penerima": "izat",
-            "AlamatBarang": "lampung"
+             {
+            "DataBarang": [
+                {
+                    "NamaBarang": "Dompet",
+                    "Id": "111",
+                    "Pengirim": "Aldi",
+                    "Penerima": "Mila",
+                    "AlamatBarang": "jakarta"
+                },
+                {
+                    "NamaBarang": "Dompet",
+                    "Id": "123",
+                    "Pengirim": "Aldi",
+                    "Penerima": "Mila",
+                    "AlamatBarang": "jakarta"
+                },
+                {
+                    "NamaBarang": "Gelas",
+                    "Id": "212",
+                    "Pengirim": "Budi",
+                    "Penerima": "Dimas",
+                    "AlamatBarang": "Palembang"
+                },
+                {
+                    "NamaBarang": "Gelas",
+                    "Id": "456",
+                    "Pengirim": "Budi",
+                    "Penerima": "Dimas",
+                    "AlamatBarang": "Palembang"
+                },
+                {
+                    "NamaBarang": "kaca",
+                    "Id": "987",
+                    "Pengirim": "fidi",
+                    "Penerima": "izat",
+                    "AlamatBarang": "lampung"
+                }
+            ]
         }
-    ]
-}
         ]
 
-### Membuat data pekerja baru [POST]
+### membuat barang baru [POST]
 
 untuk menambah pekerja baru
 
 + Request (application/json)
 
         {
-        "Data Pekerjaan": [
+        "DataBarang": [
         {
-            "id_pekerja": "ID pekerja",
-            "nama_pekerja": "nama pekerja",
-            "umur_pekerja": "umur pekerja",
-            "nama_pekerjaan": "nama / pangkatan pekerjaan",
-            "alamat_pekerja": "alamat pekerja"
+            "NamaBarang": "Nama Barang",
+            "Id": "ID Barang",
+            "Pengirim": "Pengirim",
+            "Penerima": "Penerima",
+            "AlamatBarang": "Alamat Barang"
         }
         ]
         }
@@ -75,32 +75,32 @@ untuk menambah pekerja baru
 
     + Headers
 
-            Location: /uas/post
+            Location: /uas/postapi
 
     + Body
 
             {
             "Data Pekerjaan": [
             {
-                "id_pekerja": "",
-                "nama_pekerja": "",
-                "umur_pekerja": "",
-                "nama_pekerjaan": "",
-                "alamat_pekerja": ""
+                "NamaBarang": "",
+                "Id": "",
+                "Pengirim": "",
+                "Penerima": "",
+                "AlamatBarang": ""
             },
             ]
             }
             
-### Mengedit data pekerja [PUT]
+### mengubah data [PUT]
 
 untuk meng-edit pekerja 
 
 + Request (application/json)
 
         {
-        "Data Pekerjaan": [
+        "DataBarang": [
         {
-            "id_pekerja": "ID pekerja",
+            "Id": "ID Barang",
         }
         ]
         }
@@ -109,32 +109,32 @@ untuk meng-edit pekerja
 
     + Headers
 
-            Location: /uas/put
+            Location: /uas/putapi
 
     + Body
 
             {
-            "Data Pekerjaan": [
+            "DataBarang": [
             {
-                "id_pekerja": "",
-                "nama_pekerja": "",
-                "umur_pekerja": "",
-                "nama_pekerjaan": "",
-                "alamat_pekerja": ""
+                "NamaBarang": "",
+                "Id": "",
+                "Pengirim": "",
+                "Penerima": "",
+                "AlamatBarang": ""
             },
             ]
             }
             
-### Menghapus data pekerja [DELETE/uas/delete]
+### Menghapus data pekerja [DELETE/uasdaviddranalo/delete]
 
-untuk menghapus pekerja 
+untuk menghapus data
 
 + Request (application/json)
 
         {
-        "Data Pekerjaan": [
+        "DataBarang": [
         {
-            "id_pekerja": "ID pekerja",
+            "Id": "ID Barangr",
         }
         ]
         }
@@ -143,11 +143,11 @@ untuk menghapus pekerja
 
     + Headers
 
-            Location: /uas/delete
+            Location: /uasdaviddranalo/delete
 
     + Body
 
             {
-            " berhasil terhapus "
+            " Telah Terhaps "
             ]
             }
